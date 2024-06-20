@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function register(user, cb) {
+        //     setTimeout(() => {
+        //         console.log(`User registered ${user}`);
+        //         cb()
+        //     }, 4000)
+        // }
+
+        // function sendEmail(email, cb) {
+        //     setTimeout(() => {
+        //         console.log(` email is ${email}`)
+        //         cb()
+        //     }, 3000)
+        // }
+
+        // function login(userr, cb) {
+        //     setTimeout(() => {
+        //         console.log(`user logged in ${userr}`)
+        //     }, 2000)
+
+        // }
+        // register("diksha jaggi", () => {
+        //     sendEmail("dikshajaggi@gmail.com", () => {
+        //         login("diksha")
+        //     })
+        // })
+
+        // callback funtion: a function which is executed when the previous function has finished the execution
+
+
+        // console.log("hiii")
+        // setTimeout(function timeout(){
+        //     console.log("hello")
+        // },2000)
+        // console.log("heyyy")
+
+
+
+        //promises: promise represents the actual  completion or failure of asynchronous programming 
+
+       // promise
+       //resolve                 reject
+
+       //ex :
+       //you           meet tomorrow           friend 
+       //1 stage            2 stage                  3 stage 
+       // pending           // resolve               //reject
+                            //then()                //catch()
+    //then () and catch() predefined in js 
+
+    // new Promise ()
+    // new Promise(function(resolve,reject){
+    // if(condition){
+    //     resolve("success")
+    // }else{
+    //     reject("fail")
+    // }
+    // }) 
+
+
+//     let onfulfilment=(result)=>{
+// console.log(result)
+//     }
+// let onrejection=(error)=>{
+// console.log(error)
+// }
+// abc().then(onfulfilment).catch(onrejection)
+
+function prom(complete){
+
+return new Promise(function(resolve,reject){
+
+    if(complete){
+        resolve("im success")
+    }else{
+        reject("im fail")
+    }
+})
+}
+
+let onfulfilment=(result)=>{
+console.log(result)
+}
+
+let onrejection=(error)=>{
+    console.log(error)
+}
+
+prom(false).then(onfulfilment).catch(onrejection)
+
+// a=Math.random();
+// console.log(a)
+
+
+    </script>
+</body>
+
+</html>
