@@ -71,27 +71,27 @@
 // break;
 // }
 
-let week=44;
-switch(week){
+// let week=44;
+// switch(week){
 
-case(1):document.write("monday")
-break;
-case(2):document.write("tuesday")
-break;
-case(3):document.write("wednesday")
-break;
-case(4):document.write("thursday")
-break;
-case(5):document.write("friday")
-break;
-case(6):document.write("saturday")
-break;
-case(7):document.write("sunday")
-break;
-default:document.write("please provide a valid week number")
-break;
+// case(1):document.write("monday")
+// break;
+// case(2):document.write("tuesday")
+// break;
+// case(3):document.write("wednesday")
+// break;
+// case(4):document.write("thursday")
+// break;
+// case(5):document.write("friday")
+// break;
+// case(6):document.write("saturday")
+// break;
+// case(7):document.write("sunday")
+// break;
+// default:document.write("please provide a valid week number")
+// break;
 
-}
+// }
 
 //Write A Javascript Program That Display The Largest Integer Among Two Integer 
 //Write A Js Conditional Statement To Find A Sign Of Product Of Three Number 3,-7,2
@@ -100,7 +100,19 @@ break;
 
 
 
+let zx=["car","bike",78,98,34,"auto","train",23]
+let strings=[];
+let numbers=[];
 
+for(let i=0;i<zx.length;i++){
+    if(isNaN(zx[i])){
+        strings.push(zx[i]);
+    }else{
+        numbers.push(zx[i]);
+    }
+}
+console.log(strings)
+console.log(numbers)
 
 
 
