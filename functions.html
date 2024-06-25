@@ -6,6 +6,79 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        //functions: it is a block of code , multiple statements ,c onditions can be wriiten in a single function
+
+        // syntax: function functionname(){
+    //statements
+    //}
+    //functionname();
+
+    //rules: 
+    // functionname cannot start with a number 
+    // functionname can not have space in btween 
+    // functionname can be written in camelcase //functionName
+
+
+    // document.write("im diksha jaggi"+"<br>")
+    // document.write("im a web development trainer "+"<br>")
+    // document.write("Im working in excellence technologies"+"<br>")
+
+//  function myIntro(){
     
+//     document.write("im diksha jaggi"+"<br>")
+//     document.write("im a web development trainer "+"<br>")
+//     document.write("Im working in excellence technologies"+"<br>")
+//  }
+//  myIntro();
+//  myIntro();
+
+//function with parameters and arguments:
+//syntax: function functionname(parameter1, parameter2){
+//statmenet
+//}
+//functionname(argument1, argument2)
+
+//parameters are passed where functionanme is written
+//arguments are passed where functionname is called
+
+
+// function fullName(fname,lname){
+// document.write("hello"+ " "+fname+" "+lname+"<br>")
+
+// }
+// fullName("diksha","jaggi")
+
+// function sum (maths,english,physics,che,bio){
+
+// document.write(maths+english+physics+che+bio)
+// }
+// sum(23,78,98,65,56);
+
+//create a function which gives us the sum of numbers and we have only two parameters and two arguments 
+
+// sum(4567,9886)
+//sum(3455,9877)
+
+//sum(6533,9779)
+
+//function with return value 
+document.write("total marks:500"+"<br>")
+document.write("total subjects:5"+"<br>")
+function sum(maths,english,hindi,physics,che){
+   let a= maths+english+hindi+physics+che
+return a;
+}
+let b=sum(67,89,98,78,56)
+document.write("total marks obtained:"+ b+"<br>")
+
+function fullname(fname,lname){
+
+let c="hello"+" "+fname+" "+lname
+return c;
+}
+let d=fullname("diksha","jaggi")
+document.write(d)
+    </script>
 </body>
 </html>
