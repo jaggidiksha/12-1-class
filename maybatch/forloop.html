@@ -86,6 +86,120 @@
     //****
     //*****
 
+//1
+//23
+//456
+//78910
+
+
+// let num=1;
+
+// output="";
+
+// for(let i=1;i<=4;i++){
+// for(let j=1;j<=i;j++){
+// output+=num;
+// num++;
+// }
+// output+="<br>"
+// }
+
+// document.write(output)
+
+
+
+
+//iterable objects: on which the loop works , eg : array , strings
+//non-iterable objects:on which the loop doesnot work , boolean, integer
+
+//for in: it iterate over the objects 
+
+//syntax:
+
+// for(variable in object){
+//code block to be executes
+//}
+const qw={
+name:"diksha",
+surname:"jaggi",
+developer:"web development"
+}
+//get the keys
+for(let x in qw){
+ console.log(x)
+}
+
+//to get the values
+for(let x in qw){
+    console.log(qw[x])
+}
+
+//to add a new key in the object
+qw["email"]="diksha58@gmail.com"
+console.log(qw)
+
+//to access the particular value 
+console.log(qw["name"])
+
+const arr=[10,20,90,78]
+//to get index value 
+for(x in arr){
+    console.log(x)
+}
+
+//to access elements
+for(x in arr){
+    console.log(arr[x])
+}
+
+
+//for of: it itearte over the values on the object 
+//syntax:
+// for(variable of obejct){
+//     //statement
+// }
+
+const arry=[78,89,98,65,45]
+
+for(let x of arry){
+    console.log(x)
+}
+
+
+const st="car bus train"
+for(let x of st){
+    console.log(x)
+}
+
+//forEach: operation on each element od an array
+
+//syntax:
+// array.forEach(function(x){
+
+
+// })
+const aa=[2,3,4,5,6]
+aa.forEach(function(x){
+ console.log(x*2)
+})
+console.log(aa)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
