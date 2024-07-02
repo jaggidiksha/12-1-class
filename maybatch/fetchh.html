@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //fetch: less coding, more output
+        //syntax:
+        
+        // fetch(url)
+
+        //fetch (url)---------------------------->promise
+        //fetch(url).then()---------------------->promise
+        //fetch(url).then().then()
+
+        //then ()> type of data 
+        //fetch(url).then(function(response){
+      //return response.data()  
+    //})
+
+    //data() can be of two types:
+    //json()
+    //[{},{},{}]
+    //text()
+
+    //fetch(url)
+    //.then(function(response){
+//     return response.data()
+// }).then(function(result){
+// console.log(result)
+// })
+//fetch was introduced in es6 and arrow functions were also introduced in es6, so we can replace the traditional functions with arrow functions
+//fetch(url).then((response)=>{
+// return response.data()
+// }).then((result)=>{
+// console.log(result)
+// })
+
+// fetch(url)
+// .then(response=>response.data())
+// .then(result=>console.log(result))
+// .catch(error=>console.log("operation failed "))
+
+// fetch("/content/diksha.txt")
+// .then(response=>response.text())
+// .then(result=>console.log(result))
+
+//json data
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response=>response.json())
+.then(result=>console.log(result))
+    </script>
+</body>
+</html>
