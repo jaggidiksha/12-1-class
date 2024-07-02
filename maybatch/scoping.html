@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //scoping:
+        //local scoping
+        //global scoping
+        //lexical scoping
+
+        //global scoping : the variables declared outside of the function are called global variables  and the concept is called global scoping, all the global variables can be accessed locally also
+
+        // let a = "diksha";
+        // document.write(a)
+
+
+
+        //local scoping : the variable  declared inside the function are called local variables and the concept is called local scoping, local variables can not be accessed globally
+
+        // function abc() {
+
+        //     let b = "jaggi"
+        //     // document.write(b)
+        //     document.write(a)
+
+        // }
+        // abc()
+        // document.write(b)
+
+
+        //lexical scoping/closures: introduced in es6, arrow functions 
+        //arrow functions:
+        //syntax:
+        //const abc=()=>{
+        //     // }
+        //     abc()
+
+
+        //closures: closure in action says that there will be two functions , innerfunction and outerfuntion , the innerfunction can have the access to the outerfunction variabels as well as parameters 
+
+
+        const outerfun = (a) => {
+            let b = 20;
+            const innerfun = () => {
+                let sum = a + b;
+                console.log(`the sum of two numbers is ${sum}`)
+            }
+            innerfun()
+        }
+        outerfun(10);
+
+        //the sum of two numbers is 30
+        // the sum of two numbers is : string
+        //30 :expression
+        //string+expression
+        //template literals , backticks
+        //expression: ${expressionname}:string interpolation
+    </script>
+</body>
+
+</html>
