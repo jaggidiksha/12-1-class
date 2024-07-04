@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>to do list</h1>
+    <input type="text" id="myvalue">
+    <button onclick="newelement()">add</button>
+    <ul id="data">
+
+    </ul>
+    <script>
+        function newelement(){
+            inputvalue=document.getElementById("myvalue").value 
+            if(inputvalue===""){
+                alert("please enter a task")
+            }
+
+           li= document.createElement("li")
+      textnode=document.createTextNode(inputvalue)
+      li.appendChild(textnode)
+
+      editbtn=document.createElement("button")
+      editbtn.appendChild(document.createTextNode("editbtn"))
+      editbtn.onclick=function(){
+        newtext=prompt("enter new task")
+
+        if(newtext!=="" && newtext!==null){
+            textnode.textContent=newtext
+        }
+      }
+      li.appendChild(editbtn)
+
+   dltbtn=   document.createElement("button")
+   dltbtn.appendChild(document.createTextNode("dltbtn"))
+   dltbtn.onclick=function(){
+    this.parentNode.remove()
+   }
+li.appendChild(dltbtn)
+
+      document.getElementById("data").appendChild(li)
+        }
+    </script>
+    
+</body>
+</html>
