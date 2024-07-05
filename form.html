@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" action="">
+        <label>Name</label>
+        <input type="text" id="name"><br>
+        <label>Age</label>
+        <input type="number" id="age"><br>
+        <label>Email</label>
+        <input type="email" id="email">
+        <br>
+        <input type="submit">
+    </form>
+
+    <script>
+formm=document.getElementById("form")
+formm.addEventListener("submit", function(e){
+    e.preventDefault();
+
+let name=document.getElementById("name").value
+let age=document.getElementById("age").value
+let email=document.getElementById("email").value
+
+console.log("name:",name)
+console.log("age:",age)
+console.log("email:",email)
+
+
+})
+    </script>
+    
+</body>
+</html>
