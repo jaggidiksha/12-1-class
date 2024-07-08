@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validation()" >
+        <label for="username">Username</label>
+        <input type="text" name="username" id="user" placeholder="Enter your username"><br>
+        <span id="userr" style="color: red;"></span><br>
+        <input type="submit">
+    </form>
+    <script>
+function validation(){
+let user=document.getElementById("user").value
+
+
+if(user===""){
+    document.getElementById("userr").innerHTML="Username is required";
+    return false;
+}
+
+if((user.length<5) ||(user.length>20)){
+    document.getElementById("userr").innerHTML="username can only be between 5 to 20 letters";
+    return false;
+}
+
+if(!isNaN(user)){
+    document.getElementById("userr").innerHTML="only characters are allowed";
+    return false;
+}
+
+}
+    </script>
+</body>
+</html>
