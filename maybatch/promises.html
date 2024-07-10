@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function prom(complete) {
+
+            return new Promise(function (resolve, reject) {
+                if (complete) {
+                    resolve("im success")
+                } else {
+                    reject("im fail")
+                }
+            })
+        }
+
+        let onfulfilment = (result) => {
+            console.log(result)
+        }
+
+        let onrejection = (error) => {
+            console.log(error)
+        }
+
+
+        prom(false).then(onfulfilment).catch(onrejection)
+        // prom(false).catch(onrejection)
+
+
+       let a= Math.random();
+       document.write(a)
+    </script>
+
+</body>
+
+</html>
