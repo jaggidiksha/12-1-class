@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array:multiple elments can be stored inside the array, multiple elements stored inside the array not necessariraliy belong to a particular datatype , array is alwys zero indexed
+        //[]
+
+        //array literal 
+        //array constructor 
+        
+
+        //array literal
+        // const ar=["car",89,"bike","train",78]
+        // console.log(ar)
+
+
+
+        //array constructor 
+
+    //  const a=   new Array(12,34,56)
+    //  console.log(a)
+
+    //  const b=Array(67,78,89)
+    //  console.log(b)
+
+    // const ar=["car","bus","train",89,78,67]
+    // console.log(ar)
+
+    //to check the length of array
+
+    // console.log(ar.length)
+
+    //indexing
+// to check the element present at a particular index value
+    // console.log(ar[2])
+// to change the value of a particular index
+
+// ar[2]="bike"
+// console.log(ar)
+
+
+//to add the element at the end of array
+// const ar=["car","bus","train",89,78,67]
+// console.log(ar)
+// console.log(ar.push("bike"))
+// console.log(ar)
+
+
+//to add the element at the start of array 
+// const ar=["car","bus","train",89,78,67]
+// ar.unshift("bike")
+// console.log(ar)
+
+//to remove the element from the end
+// const ar=["car","bus","train",89,78,67]
+// ar.pop()
+// ar.pop()
+// console.log(ar)
+
+//to remove the element form the start 
+
+// const ar=["car","bus","train",89,78,67]
+// ar.shift()
+// console.log(ar)
+
+
+// to add element at particular index value 
+
+// const ar=["car","bus","train",89,78,67]
+// ar.splice(1,2,"bike")// add element bike at index value 1 and it will remove two elemnts after it
+// console.log(ar)
+
+// const ary=[1,2,3,4,5,6,7]
+// //add element 19 at 3 index value and remove 1 elements after it
+// ary.splice(3,1,19)
+// console.log(ary)
+
+//to check the index of particular element
+// const ar=["car","bus","train",89,78,67]
+// console.log(ar.indexOf("train"))
+
+
+//slice : shallow copy the array
+// const ar=["car","bus","train",89,78,67]
+// let a=ar.slice()
+// console.log(a)
+
+//specify the starting index
+// const ar=["car","bus","train",89,78,67]
+// let b=ar.slice(1)
+// console.log(b)
+
+//specify the ending index value also
+// const ar=["car","bus","train",89,78,67]
+// let b=ar.slice(1,4)
+// console.log(b)
+
+//specify the negative index also
+const ar=["car","bus","train",89,78,67]
+let b=ar.slice(-3)
+console.log(b)
+    </script>
+    
+</body>
+</html>
