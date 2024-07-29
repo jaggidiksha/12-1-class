@@ -6,43 +6,69 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>to do list</h1>
-    <input type="text" id="myvalue">
-    <button onclick="newelement()">add</button>
-    <ul id="data">
 
-    </ul>
+    <div >
+        <h1>TO-DO LIST</h1>
+
+        <input type="text" id="myvalue" placeholder="enter a task">
+        <button onclick="newelement()">ADD</button>
+
+        <ul id="data">
+
+        </ul>
+    </div>
+
     <script>
+
         function newelement(){
-            inputvalue=document.getElementById("myvalue").value 
-            if(inputvalue===""){
-                alert("please enter a task")
-            }
 
-           li= document.createElement("li")
-      textnode=document.createTextNode(inputvalue)
-      li.appendChild(textnode)
+    let inputvalue= document.getElementById("myvalue").value
+  if(inputvalue==""){
+    alert('please provide a task')
+  }
 
-      editbtn=document.createElement("button")
-      editbtn.appendChild(document.createTextNode("editbtn"))
-      editbtn.onclick=function(){
-        newtext=prompt("enter new task")
 
-        if(newtext!=="" && newtext!==null){
-            textnode.textContent=newtext
-        }
-      }
-      li.appendChild(editbtn)
+ let li= document.createElement("li")
+ let textnode=document.createTextNode(inputvalue)
+ li.appendChild(textnode)
 
-   dltbtn=   document.createElement("button")
-   dltbtn.appendChild(document.createTextNode("dltbtn"))
-   dltbtn.onclick=function(){
-    this.parentNode.remove()
+
+
+let editbtn=document.createElement("button")
+editbtn.appendChild(document.createTextNode("edit"))
+
+editbtn.onclick=function(){
+   let newtask= prompt("enter new task")  
+   if(newtask !==null && newtask !==""){
+    textnode.nodeValue=newtask
    }
+}
+li.appendChild(editbtn)
+
+let dltbtn=document.createElement("button")
+dltbtn.appendChild(document.createTextNode("delete"))
+
+dltbtn.onclick=function(){
+ let listitems=  this.parentElement
+ listitems.remove()
+}
+
 li.appendChild(dltbtn)
 
-      document.getElementById("data").appendChild(li)
+
+
+
+document.getElementById("data").appendChild(li)
+
+
+
         }
+
+
+
+
+
+
     </script>
     
 </body>
